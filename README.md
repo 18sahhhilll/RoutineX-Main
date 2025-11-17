@@ -1,73 +1,150 @@
-# Welcome to your Lovable project
+# Habit Tracker App
 
-## Project info
+A modern and minimal Habit Tracking application built using **React**,
+**TypeScript**, **Supabase**, **Tailwind CSS**, and **shadcn-ui**.\
+This app allows users to track their good and bad habits, store them
+securely in the cloud, and visualize progress using a clean and
+interactive **pie chart dashboard**.
 
-**URL**: https://lovable.dev/projects/8ea93a7c-22f5-4294-a499-7121d453b6b7
+------------------------------------------------------------------------
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+-   ✔ Add and track daily habits\
+-   ✔ Mark habits as **Good** or **Bad**\
+-   ✔ Visualize overall progress with a **Pie Chart**\
+-   ✔ Secure user authentication via Supabase\
+-   ✔ Real-time synced data stored in Supabase\
+-   ✔ Clean and customizable UI using Tailwind + shadcn-ui\
+-   ✔ Built with Vite for fast development and optimized production
+    builds\
+-   ✔ Fully responsive (mobile + desktop)
 
-**Use Lovable**
+------------------------------------------------------------------------
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8ea93a7c-22f5-4294-a499-7121d453b6b7) and start prompting.
+## 🧰 Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+  -----------------------------------------------------------------------
+  Layer                      Technology
+  -------------------------- --------------------------------------------
+  **Frontend**               React + TypeScript
 
-**Use your preferred IDE**
+  **Styling**                Tailwind CSS + shadcn-ui
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+  **Backend**                Supabase (PostgreSQL + Auth)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+  **Build Tool**             Vite
 
-Follow these steps:
+  **Charts**                 Radix UI / ChartJS / Recharts (based on your
+                             implementation)
+  -----------------------------------------------------------------------
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+------------------------------------------------------------------------
 
-# Step 2: Navigate to the project directory.
+## 📦 Installation & Setup
+
+### 🔧 Prerequisites
+
+Make sure you have:
+
+-   **Node.js** (v16 or above)\
+-   **npm** or **yarn**\
+-   A **Supabase account** and project
+
+------------------------------------------------------------------------
+
+### 📥 Steps to Run Locally
+
+``` sh
+# 1. Clone the repository
+git clone <YOUR_GIT_REPO_URL>
+
+# 2. Navigate into the project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# 3. Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4. Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The app will now be running at:\
+👉 **http://localhost:5173**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+------------------------------------------------------------------------
 
-**Use GitHub Codespaces**
+## 🔐 Environment Variables
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Create a `.env` file in the root folder and add:
 
-## What technologies are used for this project?
+``` env
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
-This project is built with:
+------------------------------------------------------------------------
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📁 Project Structure
 
-## How can I deploy this project?
+    .
+    ├── src
+    │   ├── components
+    │   ├── pages
+    │   ├── hooks
+    │   ├── lib
+    │   ├── utils
+    │   ├── App.tsx
+    │   └── main.tsx
+    ├── public
+    ├── index.html
+    ├── tailwind.config.js
+    ├── package.json
+    └── README.md
 
-Simply open [Lovable](https://lovable.dev/projects/8ea93a7c-22f5-4294-a499-7121d453b6b7) and click on Share -> Publish.
+------------------------------------------------------------------------
 
-## Can I connect a custom domain to my Lovable project?
+## 📊 Screenshots
 
-Yes it is!
+Add your screenshots here:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+    ![Dashboard](./screenshots/dashboard.png)
+    ![Pie Chart](./screenshots/piechart.png)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+------------------------------------------------------------------------
+
+## 🚀 Deployment
+
+You can deploy this project on:
+
+-   Vercel\
+-   Netlify\
+-   Supabase\
+-   Cloudflare Pages
+
+Build the project:
+
+``` sh
+npm run build
+```
+
+Upload the `dist/` folder or link your GitHub repo to the deployment
+platform.
+
+------------------------------------------------------------------------
+
+## 🌱 Future Enhancements
+
+-   Habit streak tracking\
+-   Notifications/reminders\
+-   Category + tagging system\
+-   Calendar view\
+-   Multi-user dashboards\
+-   Export data as CSV/PDF
+
+------------------------------------------------------------------------
+
+## 📄 License
+
+This project is owned and maintained by **Sahil Sangle**.\
+All rights reserved.
